@@ -1,3 +1,5 @@
+/*Definição de fontes:*/
+
 @font-face {
     font-family:"Unbouded";
     src: url("../fontes/Unbounded-Bold.ttf");
@@ -16,10 +18,14 @@
     font-display: swap;
 }
 
+/*Reset:*/
+
 *{
     padding: 0;
     margin: 0;
 }
+
+/*Estilo Desktop:*/
 
 body{
     background-color: #0E1014;
@@ -40,16 +46,16 @@ h1{
 
 }
 
+h1 span {
+    color:#9747FF; 
+}
+
 p{
     font-size: 24px;
     font-family:"Poppins", sans-serif;
     text-align: center;
     margin: 24px auto 0;
     width: 792px;
-
-}
-h1 span {
-    color:#9747FF; 
 }
 
 a{
@@ -75,4 +81,54 @@ section img{
     width: 795px;
     height: 452px;
     margin: 0 auto;
+}
+
+/*Adaptando para tablet e mobile:*/
+
+/*Tablet*/
+
+@media(max-width: 768px){
+
+    header img{
+        margin:65px 0 0 60px;
+    }
+
+    p{
+        width: 648px;
+    }
+
+    section img{
+        width: 659.5px;
+        height: 446px;
+    }
+
+}
+
+/*Mobile*/
+
+@media(max-width: 375px){
+
+    header img{
+        margin: 32px 0 0 16px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font: size 20px;
+        width: 340px;
+    }
+
+    a{
+        font-size: 20px;
+        width: 251px;
+    }
+
+    section img{
+        width:340px;
+        height: 230px;
+    }
+
 }
