@@ -44,7 +44,8 @@ p{
     font-size: 24px;
     font-family:"Poppins", sans-serif;
     text-align: center;
-    margin-top: 24px;
+    margin: 24px auto 0;
+    width: 792px;
 
 }
 h1 span {
@@ -66,6 +67,9 @@ a{
     margin:40px auto;
 }
 
+a:hover{
+    background-color:#8233E8;
+}
 section img{
     display: block;
     width: 795px;
